@@ -1,0 +1,14 @@
+SELECT * FROM users;
+INSERT INTO users ( first_name,last_name,email,created_at,updated_at)
+VALUES
+("Stefanie","Cruz","alo@gamil.com",now(),now()),
+("Carlos","Rico","rico@gamil.com",now(),now()),
+("Richard","Teran","teran@gamil.com",now(),now()),
+("Ivan","Torres","ivan@gamil.com",now(),now());
+
+SELECT * FROM users WHERE email = "alo@gamil.com";
+SELECT * FROM users WHERE id = 4;
+UPDATE users SET last_name ="Pancakes" WHERE ID =3;
+DELETE FROM users WHERE id  = 2;
+SELECT * FROM users ORDER BY first_name;
+SELECT * FROM users ORDER BY first_name DESC;
